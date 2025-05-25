@@ -1,6 +1,6 @@
 # Integrations:
 
-## Icons:
+## Icons
 
 - astro-icon
 - iconify-json/mdi 
@@ -24,3 +24,12 @@
 ## Partytown
 
 - astrojs/partytown
+
+
+# Colors Styles
+
+- #28808D
+- #2D5B63
+- #17A2B8
+- #233538
+- #283233

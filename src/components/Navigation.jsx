@@ -10,7 +10,7 @@ function Navigation() {
 
   return (
     <>
-      <section className="bg-white text-black sticky top-0 z-50 shadow-md">
+      <nav className="bg-white text-black sticky top-0 z-50 shadow-md">
         <div className="flex justify-between h-14 w-10/12 mx-auto items-center">
           <div>
             <h1 className="flex">
@@ -24,20 +24,18 @@ function Navigation() {
           </div>
           <div>
             <ul className="hidden lg:flex pr-4 navigation">
-              <>
                 <li className="p-4">
-                  <a href="/" class="hover:text-[#17A2B8]">Home</a>
+                    <a href="/" className="hover:text-[#17A2B8]">Home</a>
                 </li>
                 <li className="p-4">
-                  <a href="/portfolio" class="hover:text-[#17A2B8]">Portfolio</a>
+                    <a href="/portfolio" className="hover:text-[#17A2B8]">Portfolio</a>
                 </li>
                 <li className="p-4">
-                  <a href="/education" class="hover:text-[#17A2B8]">Education</a>
+                    <a href="/education" className="hover:text-[#17A2B8]">Education</a>
                 </li>
                 {/* <li className="p-4">
-                  <a href="/contact" class="hover:text-[#17A2B8]">Contact</a>
+                    <a href="/contact" className="hover:text-[#17A2B8]">Contact</a>
                 </li> */}
-              </>
             </ul>
           </div>
           <div className="lg:hidden" onClick={handleClick}>
@@ -49,38 +47,36 @@ function Navigation() {
             !nav ? "hidden navigation" : "absolute bg-white w-full lg:hidden z-50 navigation"
           }
         >
-          <>
             <li className="w-full mx-auto text-center bg-[#f4f4f4]">
-              <a href="/" class="block pt-4 pb-4" onClick={handleClose}>
+                <a href="/" className="block pt-4 pb-4" onClick={handleClose}>
                 Home
-              </a>
+                </a>
             </li>
             <li className="w-full mx-auto text-center">
-              <a
+                <a
                 href="/portfolio"
-                class="block pt-4 pb-4"
+                className="block pt-4 pb-4"
                 onClick={handleClose}
-              >
+                >
                 Portfolio
-              </a>
+                </a>
             </li>
             <li className="w-full mx-auto text-center bg-[#f4f4f4]">
-              <a
+                <a
                 href="/education"
-                class="block pt-4 pb-4"
+                className="block pt-4 pb-4"
                 onClick={handleClose}
-              >
+                >
                 Education
-              </a>
+                </a>
             </li>
             {/* <li className="w-full mx-auto text-center">
-              <a href="/contact" class="block pt-4 pb-4" onClick={handleClose}>
+                <a href="/contact" className="block pt-4 pb-4" onClick={handleClose}>
                 Contact
-              </a>
+                </a>
             </li> */}
-          </>
         </ul>
-      </section>
+      </nav>
     </>
   );
 }

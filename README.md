@@ -1,6 +1,8 @@
-#Integrations:
+# Integrations:
 
-##Icons:
+---
 
-1. astro-icon
-⋅⋅⋅iconify-json/mdi
+## Icons:
+
+- astro-icon
+- iconify-json/mdi 

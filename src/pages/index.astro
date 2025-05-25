@@ -4,15 +4,39 @@ import { Icon } from 'astro-icon/components';
 
 // Components
 import Hero from '../components/Hero.astro';
+import Skills from '../components/Skills.astro';
+import Button from '../components/Button';
+import EducationSection from '../components/EducationSection.astro';
 
 ---
 
 <Layout>
 	<main>
 		<Hero />
-		<p>This is my index page</p>
-		<!-- Automatically fetches and inlines Material Design Icon's "account" SVG -->
-		<Icon name="mdi:account-key-outline" />
-		<h1 class="text-3xl font-bold underline">  Hello world!</h1>
+		<section class="bg-[#f4f4f4] pt-5 pb-5 shadow-xl">
+			<Skills />
+		</section>
+		<!-- redo the project card section -->
+
+
+		<!-- redo the project card section -->
+		<section class="w-10/12 xl:w-10/12 mx-auto mb-20 mt-5 md:flex">
+			<div class="mx-auto">
+				<Button link="/portfolio" name="See more projects" target="_self" bgColor="bg-[#17A2B8] hover:bg-[#28808D] shadow-md hover:shadow-2xl" width="w-full text-center text-1xl text-white pl-6 pr-6" />
+			</div>
+			
+		</section>
+		<section class="pt-2 pb-20 bg-[#f4f4f4]">
+			<div class="mt-10">
+				<h2 class="text-center text-4xl font-bold uppercase">Education</h2>
+			</div>
+			<EducationSection />
+			<div class="mt-10">
+				<div class="w-full">
+					<p class="text-center text-1xl italic">For more information on my education, see below</p>
+					<Button link="/education" name="Education" target="_self" bgColor="bg-[#17A2B8] hover:bg-[#28808D] shadow-md hover:shadow-2xl" width="w-[150px] mx-auto mt-5 text-center text-1xl text-white" />
+				</div>
+			</div>
+		</section>
 	</main>
 </Layout>

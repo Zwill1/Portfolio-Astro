@@ -1,12 +1,16 @@
 ---
+// Importing components
+import Footer from "../components/Footer.astro";
+import Navigation from "../components/Navigation";
 import MainHead from "./MainHead.astro";
 
-
+// Typescript Safety
 interface Meta {
  title: string;
  description: string;
 }
 
+// Variables
 const {
 	title = "Title",
 	description = "description for the website",
@@ -19,7 +23,10 @@ const {
 <html lang="en">
 	<MainHead title={title} description={description} />
 	<body>
+		<!-- Requires the client load for any reactJS or state used components -->
+		<Navigation client:load />
 		<slot />
 	</body>
+	<Footer />
 </html>
 

@@ -1,7 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon/components';
+
+// Components
+import Hero from '../components/Hero.astro';
+
 ---
 
 <Layout>
-	<p>This is my index page</p>
+	<main>
+		<Hero />
+		<p>This is my index page</p>
+		<!-- Automatically fetches and inlines Material Design Icon's "account" SVG -->
+		<Icon name="mdi:account-key-outline" />
+		<h1 class="text-3xl font-bold underline">  Hello world!</h1>
+	</main>
 </Layout>

@@ -1,0 +1,65 @@
+---
+
+// Component imports
+import EducationStats from "./EducationStats";
+
+---
+
+<section class="w-10/12 mx-auto lg:flex mt-10 mb-10">
+    <div class="w-full lg:w-4/12 mx-auto text-center m-2" id="cato">
+        <div class="pl-6 pr-6 pt-8 pb-8" id="overlay">
+            <EducationStats school="Centre for Arts and Technology" body="Achieved top of my class in most of the subjects offered in the Graphic and Digital Media Design course. Learn more about my education and background." year="2012" />
+        </div>
+    </div>
+    
+    <div class="w-full lg:w-4/12 mx-auto text-center m-2" id="uoc">
+        <div class="pl-6 pr-6 pt-8 pb-8" id="overlay">
+            <EducationStats school="University of Calgary" body="Achieved  Front-End Developer and .NET Application Development certificates. Had an average of 97% in my programming courses." year="2022" />
+        </div>
+    </div>
+
+    <div class="w-full lg:w-4/12 mx-auto text-center m-2" id="online">
+        <div class="pl-6 pr-6 pt-8 pb-8" id="overlay">
+            <EducationStats school="Online learning platforms" body="Mixture of online platforms such as Udemy, Coursera, Google documentation on SEO" year="2018 to present" />
+        </div>
+    </div>
+</section>
+
+<style>
+    #cato {
+        background: url("/images/background/CATO.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border: 5px solid #2D5B63;
+    }
+    #uoc {
+        background: url("/images/background/universityOfCalgary.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border: 5px solid #2D5B63;
+    }
+    #online {
+        background: url("/images/background/udemyYoutube.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border: 5px solid #2D5B63;
+    }
+    #cato:hover {
+        border: 5px solid #17A2B8;
+    }
+    #uoc:hover {
+        border: 5px solid #17A2B8;
+    }
+    #online:hover {
+        border: 5px solid #17A2B8;
+    }
+    #overlay{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.9;
+    }
+</style>

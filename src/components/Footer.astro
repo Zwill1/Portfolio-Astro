@@ -1,3 +1,69 @@
-<footer>
-    <p>this is a footer</p>
+---
+
+---
+
+<footer class="bg-black pt-10 pb-2">
+    <div class="flex w-full text-white">
+        <div class="mx-auto flex navigation">
+            <p class="pl-2 pr-2"><a href="/" class="hover:text-[#17A2B8]">Home</a></p>
+            <p class="pl-2 pr-2"><a href="/portfolio" class="hover:text-[#17A2B8]">Portfolio</a></p>
+            <p class="pl-2 pr-2"><a href="/education" class="hover:text-[#17A2B8]">Education</a></p>
+            <p class="pl-2 pr-2"><a href="/contact" class="hover:text-[#17A2B8]">Contact</a></p>
+        </div>
+    </div>
+    <div class="flex w-full text-white p-4">
+        <div class="mx-auto flex">
+            <p class="pl-2 pr-2">
+                <a href="https://github.com/zwill1" target="_blank">
+                    <img src="/images/icons/GitHub-logo.png" alt="GitHub Logo" />
+                </a>
+            </p>
+            <p class="pl-2 pr-2">
+                <a href="http://www.linkedin.com/pub/mark-phillips/35/673/b97" target="_blank">
+                    <img src="/images/icons/Linkedin.png" alt="LinkedIn Logo" />
+                </a>
+            </p>
+            <p class="pl-2 pr-2">
+                <a href="mailto:visualsplus@gmail.com?Subject=Hello from Visuals Plus Website" target="_blank">
+                    <img src="/images/icons/Email.png" alt="Email Icon" />
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="w-full">
+        <p class="text-center text-white">©2011 - <span id="year"></span> Visualsplus.com</p>
+    </div>
 </footer>
+
+<script>
+
+    const footerYear = document.querySelector("#year");
+    // Convert the number date to string
+    const currentYear = String(new Date().getFullYear());
+    // Check if NULL
+    if(footerYear !== null){
+        footerYear.innerHTML = currentYear;
+    }else {
+        console.log("Error in footer year");
+    }
+
+    // Issue: Gets all links of navigation but mobile nav is not included. Styles do not apply to mobile.
+    // Moving JS scripting to footer as Astro has issues with Document & Window attributes. Needs to be in a script tag (island methods for client components)
+    const navigation = document.querySelector(".navigation");
+    // console.log(navigation);
+
+    // Navigation null check -- SOLVED
+    if(navigation !== null){
+        const navLink = navigation.querySelectorAll("a");
+        const currentURL = window.location.href;
+        navLink.forEach((link) => {
+            if(link.href === currentURL){
+            link.classList.add("active");
+            }
+        });
+    } else {
+        // No need for console message
+        // console.error("navigation not found");
+    }
+
+</script>

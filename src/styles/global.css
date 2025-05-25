@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+html.dark {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  .dark .nav-links a {
+    color: #fff;
+  }
+
+  .active {
+    background-color: #2D5B63;
+    color: white;
+    padding: 5px 11px 5px 11px;
+  }

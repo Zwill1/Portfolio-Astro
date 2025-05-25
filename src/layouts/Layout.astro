@@ -24,7 +24,7 @@ const {
 	<MainHead title={title} description={description} />
 	<body>
 		<!-- Requires the client load for any reactJS or state used components -->
-		<Navigation client:load />
+		<Navigation client:only="react" />
 		<slot />
 	</body>
 	<Footer />

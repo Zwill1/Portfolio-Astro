@@ -1,5 +1,5 @@
 interface ButtonProps {
-    link: string;
+    link?: string;
     name: string;
     bgColor: string;
     width: string;

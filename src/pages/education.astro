@@ -1,0 +1,75 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Components
+import Skills from '../components/Skills.astro';
+import Course from '../components/Course.astro';
+import EducationStats from '../components/EducationStats';
+import { Image } from 'astro:assets';
+
+import uoc from '/src/assets/images/background/universityOfCalgary.jpg';
+import cato from '/src/assets/images/background/CATO.jpg';
+
+---
+
+<Layout>
+	<main>
+        <section class="mt-20 mb-10">
+            <h2 class="uppercase text-4xl text-center font-bold">Educational Background</h2>
+        </section>
+        <section class="lg:flex w-full mx-auto lg:w-11/12 xl:w-10/12 mb-10">
+            <div class="w-full lg:w-6/12 text-center p-5 md:p-10">
+                <Image
+                src={uoc}
+                alt="University of Calgary Logo"
+                class="w-1/2 mx-auto"
+                />
+                <h3 class="uppercase font-semibold text-center text-2xl">University of Calgary</h3>
+                <p class="text-center font-semibold">Course: <span class="italic font-light">Certificate in .NET Application Development  / Certificate in Front-End Web Development </span></p>
+                <p class="text-left pt-1">Took the .NET Application Development certificate at the University of Calgary that covered C#, Python, Windows Forms, ASP.NET, .NET, ADO.NET, Relational Database, Azure DB, Razor pages and MVP patterns. Learned software/Agile methods, Front-End Development with advanced Javascript and experience in ReactJS.</p>
+            </div>
+            <div class="w-full lg:w-6/12 text-center p-5 md:p-10">
+                <Image
+                src={cato}
+                alt="ENTRE FOR ARTS AND TECHNOLOGY logo"
+                class="w-1/2 mx-auto"
+                />
+                <h3 class="uppercase font-semibold text-center text-2xl">CENTRE FOR ARTS AND TECHNOLOGY</h3>
+                <p class="text-center font-semibold">Course: <span class="italic font-light">Graphic and Digital Media Design</span></p>
+                <p class="text-left pt-1">The Graphic and Digital Media Design course consisted of an 18 month course covering all the fundamentals of Graphic Design, Branding, Search Engine Optimization, Video Editing, WordPress , Front-End Development and some Back-End PHP Databasing. Upon graduating, I moved to Calgary, Alberta to pursue my career in the web and design industry to focus on becoming a Full Stack Developer.</p>
+            </div>
+        </section>
+        <section class="bg-[#f4f4f4] pt-5 pb-5 shadow-xl">
+            <Skills />
+            <div class="lg:flex lg:w-11/12 xl:w-10/12 mx-auto">
+                <section class="w-full lg:w-6/12 text-center p-4 text-black">
+                    <EducationStats school="University of Calgary" body="Achieved  Front-End Developer and .NET Application Development certificates. Had an average of 97% in my programming courses." year="2022" />
+                </section>
+                <section class="w-full lg:w-6/12 text-center p-4 text-black">
+                    <EducationStats school="Centre for Arts and Technology" body="Achieved top of my class in most of the subjects offered in the Graphic and Digital Media Design course. Learn more about my education and background." year="2012" />
+                </section>
+            </div>
+        </section>
+        <section class="pt-5 pb-5">
+            <div class="mt-20 mb-10">
+                <h2 class="uppercase text-4xl text-center font-bold">Additional Learning</h2>
+            </div>
+            <div class="mt-5 mb-5">
+                <p class="uppercase text-3xl text-center font-light">Online Courses - Completed</p>
+            </div>
+        </section>
+        <section class="w-full lg:flex pb-20">
+            <div class="w-full lg:w-6/12">
+                <Course title="Dive Deeper into GA4 Data and Reports" author="Skillshop" /> 
+                <Course title="Get started using Google Analytics" author="Skillshop" /> 
+                <Course title="Google Ads Search Certification" author="Skillshop" /> 
+                <Course title="Google My Business" author="Skillshop" /> 
+            </div>
+            <div class="w-full lg:w-6/12">
+                <Course title="The Web Developer Bootcamp" author="Colt Steele" />    
+                <Course title="Agile Crash Course: Agile Project Management; Agile Delivery" author="Mauricio Rubio" />    
+                <Course title="Marketing Automation & Email Marketing for Beginners" author="Mauricio Rubio" /> 
+            </div>
+        </section>
+	</main>
+</Layout>

@@ -3,10 +3,11 @@ interface ButtonProps {
     name: string;
     bgColor: string;
     width: string;
-    target?: '_blank' | '_self' | '_parent' | '_top'; // target is optional
+    target?: '_blank' | '_self' | '_parent' | '_top'; // target is optional,
+    iconStyle?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ link, name, bgColor, width, target }) => {
+const Button: React.FC<ButtonProps> = ({ link, name, bgColor, width, target, iconStyle }) => {
   return (
     <a
       href={link}
@@ -14,7 +15,7 @@ const Button: React.FC<ButtonProps> = ({ link, name, bgColor, width, target }) =
       className={`${bgColor} ${width} block p-1`}
       rel={target === '_blank' ? 'noopener noreferrer' : undefined}
     >
-      {name}
+      <i className={iconStyle}></i> {name}
     </a>
   );
 };

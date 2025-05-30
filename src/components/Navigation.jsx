@@ -17,6 +17,8 @@ function Navigation() {
               <a
                 href="/"
                 className="font-bold mr-4 text-2xl sm:text-3xl md:text-4xl uppercase"
+                aria-label="Homepage"
+                alt="Visuals Plus"
               >
                 Visuals Plus
               </a>

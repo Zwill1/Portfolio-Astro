@@ -1,4 +1,10 @@
 ---
+import { Image } from "astro:assets";
+
+// Imports for image assets
+import emailIcon from '/src/assets/images/icons/Email.png';
+import githubIcon from '/src/assets/images/icons/GitHub-logo.png';
+import linkedinIcon from '/src/assets/images/icons/Linkedin.png';
 
 ---
 
@@ -15,17 +21,17 @@
         <div class="mx-auto flex">
             <p class="pl-2 pr-2">
                 <a href="https://github.com/zwill1" target="_blank">
-                    <img src="/images/icons/GitHub-logo.png" alt="GitHub Logo" />
+                    <Image src={githubIcon} alt="GitHub Logo" />
                 </a>
             </p>
             <p class="pl-2 pr-2">
                 <a href="http://www.linkedin.com/pub/mark-phillips/35/673/b97" target="_blank">
-                    <img src="/images/icons/Linkedin.png" alt="LinkedIn Logo" />
+                    <Image src={linkedinIcon} alt="LinkedIn Logo" />
                 </a>
             </p>
             <p class="pl-2 pr-2">
                 <a href="mailto:visualsplus@gmail.com?Subject=Hello from Visuals Plus Website" target="_blank">
-                    <img src="/images/icons/Email.png" alt="Email Icon" />
+                    <Image src={emailIcon} alt="Email Icon" />
                 </a>
             </p>
         </div>

@@ -3,6 +3,7 @@
 import { Image } from 'astro:assets';
 import { ImageMetadata } from 'astro:assets';
 import Button from './Button.tsx';
+import NoLiveButton from './NoLiveLinkButton';
 
 interface Props {
     image: ImageMetadata;
@@ -28,7 +29,7 @@ const isCodeMissing = codeURL === "#";
   <p class="italic pb-1 text-sm">{tags}</p>
   <div class="flex justify-between gap-2">
     {isLiveMissing && isCodeMissing ? (
-      <Button name="No Live Links" bgColor="bg-red-800 text-white italic font-bold shadow-md hover:shadow-2xl" width="w-full" iconStyle='ri-error-warning-line' />
+      <NoLiveButton name="No Live Links" bgColor="bg-red-800 text-white italic font-bold shadow-md hover:shadow-2xl" width="w-full" iconStyle='ri-error-warning-line' />
     ) : isLiveMissing ? (
       <Button link={codeURL} name="GitHub" bgColor="bg-black text-white italic font-bold shadow-md hover:shadow-2xl" width="w-full" target="_blank" iconStyle='ri-github-line' />
     ) : isCodeMissing ? (

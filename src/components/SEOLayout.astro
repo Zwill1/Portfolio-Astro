@@ -1,0 +1,21 @@
+---
+import { SEO } from 'astro-seo';
+
+const {
+  title = 'Visuals Plus | Vernon, Kelowna and Calgary Web Design and Development | BC Web Design',
+  description = 'Visuals Plus is a Vernon, Kelowna and Calgary Web Design and Development business promoting local businesses with web page design, graphic design, online media',
+  siteUrl = 'https://visualsplus.com/',
+  image = `${siteUrl}/default-image.jpg`,
+  pathname = '',
+} = Astro.props;
+
+const fullUrl = `${siteUrl}${pathname}`;
+---
+
+<SEO
+  title={title}
+  description={description}
+  siteUrl={siteUrl}
+  image={image}
+  pageUrl={fullUrl}
+/>

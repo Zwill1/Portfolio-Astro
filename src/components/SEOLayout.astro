@@ -10,12 +10,14 @@ const {
 } = Astro.props;
 
 const fullUrl = `${siteUrl}${pathname}`;
+
+console.log(Astro.props);
 ---
 
 <SEO
   title={title}
   description={description}
-  siteUrl={siteUrl}
-  image={image}
-  pageUrl={fullUrl}
+  siteUrl?={siteUrl}
+  image?={image}
+  pageUrl?={fullUrl}
 />

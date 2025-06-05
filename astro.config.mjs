@@ -10,7 +10,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
     integrations: [icon(), react()],
     vite: {    
-        plugins: [tailwindcss()],  
+        plugins: [tailwindcss()], 
     },
 //       image: {
 //     service: {

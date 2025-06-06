@@ -10,11 +10,6 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
     integrations: [icon(), react()],
     vite: {    
-        plugins: [tailwindcss()], 
+        plugins: [tailwindcss()],
     },
-//       image: {
-//     service: {
-//       entrypoint: 'astro/assets/services/sharp', // or 'vite-imagetools' or custom
-//     },
-//   },
 });

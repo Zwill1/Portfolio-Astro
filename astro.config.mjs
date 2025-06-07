@@ -8,6 +8,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
+    // No adapter needed for static sites!
+    output: 'static', // optional, since static is the default
     integrations: [icon(), react()],
     vite: {    
         plugins: [tailwindcss()],

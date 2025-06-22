@@ -9,7 +9,7 @@ import ProjectCardNew from '../components/ProjectCardNew.astro';
 import aniStream from '/src/assets/images/spotlights/AniStream-thumbnail.jpg';
 import socialDashboard2 from '/src/assets/images/spotlights/Social-Dashboard-thumbnail.jpg';
 import carDealership from '/src/assets/images/spotlights/car-dealership-thumbnail.jpg';
-import comingSoon from '/src/assets/images/spotlights/white-text-coming-soon.jpg';
+// import comingSoon from '/src/assets/images/spotlights/white-text-coming-soon.jpg';
 import productUploader from '/src/assets/images/spotlights/product-uploader-thumbnail.jpg';
 
 import blackCat from '/src/assets/images/spotlights/black-cat-lock-and-key-thumbnail.jpg';
@@ -49,17 +49,6 @@ import sandHillWeb from '/src/assets/images/olderProjects/sandhillProperties/san
             <section class="hidden lg:block lg:flex w-full xl:w-10/12 mx-auto">
                 <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
                     <ProjectCardNew
-                        image={aniStream}
-                        imgAlt='AniStream'
-                        tags="NextJS, TypeScript, NextAuth, HTML5, CSS, TailwindCSS, Framer Motion, CLSX, Eslint"
-                        title='AniStream'
-                        url='#'
-                        codeURL='https://github.com/Zwill1/AniStream'
-                        loading='eager' 
-                    />
-                </div>
-                <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
-                    <ProjectCardNew
                         image={socialDashboard2}
                         imgAlt='Admin Social Dashboard'
                         tags="React, React Router Dom, React Context API, Axios, HTML5, CSS, TailwindCSS, Material Icons, Vitest"
@@ -77,6 +66,17 @@ import sandHillWeb from '/src/assets/images/olderProjects/sandhillProperties/san
                         title='Car Dealership'
                         url='#'
                         codeURL='https://github.com/Zwill1/car-dealership'
+                        loading='eager'  
+                    />
+                </div>
+                <!-- <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+                    <ProjectCardNew
+                        image={comingSoon}
+                        imgAlt='Project Unavailable'
+                        tags="Tags Unavailable"
+                        title='Coming Soon'
+                        url='#'
+                        codeURL='#'
                         loading='eager'  
                     />
                 </div>
@@ -90,22 +90,10 @@ import sandHillWeb from '/src/assets/images/olderProjects/sandhillProperties/san
                         codeURL='#'
                         loading='eager'  
                     />
-                </div>
+                </div> -->
             </section>
-
             <!-- Website cards for projects MOBILE -->
             <section class="md:flex w-full lg:hidden">
-                <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
-                    <ProjectCardNew
-                        image={aniStream}
-                        imgAlt='AniStream'
-                        tags="NextJS, TypeScript, NextAuth, HTML5, CSS, TailwindCSS, Framer Motion, CLSX, Eslint"
-                        title='AniStream'
-                        url='#'
-                        codeURL='https://github.com/Zwill1/AniStream'
-                        loading='eager'  
-                    />
-                </div>
                 <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
                     <ProjectCardNew
                         image={socialDashboard2}
@@ -117,8 +105,6 @@ import sandHillWeb from '/src/assets/images/olderProjects/sandhillProperties/san
                         loading='eager'  
                     />
                 </div>
-            </section>
-            <section class="md:flex w-full lg:hidden">
                 <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
                     <ProjectCardNew
                         image={carDealership}
@@ -128,6 +114,19 @@ import sandHillWeb from '/src/assets/images/olderProjects/sandhillProperties/san
                         url='#'
                         codeURL='https://github.com/Zwill1/car-dealership'
                         loading='lazy' 
+                    />
+                </div>
+            </section>
+            <!-- <section class="md:flex w-full lg:hidden">
+                <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+                    <ProjectCardNew
+                        image={comingSoon}
+                        imgAlt='Project Unavailable'
+                        tags="Tags Unavailable"
+                        title='Coming Soon'
+                        url='#'
+                        codeURL='#'
+                        loading='lazy'   
                     />
                 </div>
                 <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
@@ -141,7 +140,7 @@ import sandHillWeb from '/src/assets/images/olderProjects/sandhillProperties/san
                         loading='lazy'   
                     />
                 </div>
-            </section>
+            </section> -->
             <!-- End Website cards for projects MOBILE -->
             <!-- End Front-End Dev Projects --> 
         </div>
@@ -167,16 +166,16 @@ import sandHillWeb from '/src/assets/images/olderProjects/sandhillProperties/san
                 </div>
                 <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
                     <ProjectCardNew
-                        image={comingSoon}
-                        imgAlt='Project Unavailable'
-                        tags="Tags Unavailable"
-                        title='Coming Soon'
+                        image={aniStream}
+                        imgAlt='AniStream'
+                        tags="NextJS, TypeScript, NextAuth, HTML5, CSS, TailwindCSS, Framer Motion, CLSX, Eslint"
+                        title='AniStream'
                         url='#'
-                        codeURL='#'
-                        loading='eager'  
+                        codeURL='https://github.com/Zwill1/AniStream'
+                        loading='eager' 
                     />
                 </div>
-                <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+                <!-- <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
                     <ProjectCardNew
                         image={comingSoon}
                         imgAlt='Project Unavailable'
@@ -197,7 +196,7 @@ import sandHillWeb from '/src/assets/images/olderProjects/sandhillProperties/san
                         codeURL='#'
                         loading='eager'  
                     />
-                </div>
+                </div> -->
             </section>
 
             <!-- Website cards for projects MOBILE -->
@@ -215,17 +214,17 @@ import sandHillWeb from '/src/assets/images/olderProjects/sandhillProperties/san
                 </div>
                 <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
                     <ProjectCardNew
-                        image={comingSoon}
-                        imgAlt='Project Unavailable'
-                        tags="Tags Unavailable"
-                        title='Coming Soon'
+                        image={aniStream}
+                        imgAlt='AniStream'
+                        tags="NextJS, TypeScript, NextAuth, HTML5, CSS, TailwindCSS, Framer Motion, CLSX, Eslint"
+                        title='AniStream'
                         url='#'
-                        codeURL='#'
-                        loading='lazy' 
+                        codeURL='https://github.com/Zwill1/AniStream'
+                        loading='eager'  
                     />
                 </div>
             </section>
-            <section class="md:flex w-full lg:hidden">
+            <!-- <section class="md:flex w-full lg:hidden">
                 <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
                     <ProjectCardNew
                         image={comingSoon}
@@ -248,7 +247,7 @@ import sandHillWeb from '/src/assets/images/olderProjects/sandhillProperties/san
                         loading='lazy' 
                     />
                 </div>
-            </section>
+            </section> -->
             <!-- End Website cards for projects MOBILE -->
             <!-- End Back-End Dev Projects --> 
         </div>
@@ -319,7 +318,7 @@ import sandHillWeb from '/src/assets/images/olderProjects/sandhillProperties/san
                         loading='lazy' 
                     />
                 </div>
-                <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+                <!-- <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
                     <ProjectCardNew
                         image={comingSoon}
                         imgAlt='Project Unavailable'
@@ -351,15 +350,8 @@ import sandHillWeb from '/src/assets/images/olderProjects/sandhillProperties/san
                         codeURL='#'
                         loading='lazy' 
                     />
-                </div>
+                </div> -->
             </section>
-
-
-
-
-
-
-
             <!-- Website cards for projects MOBILE -->
             <section class="md:flex w-full lg:hidden">
                 <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
@@ -417,7 +409,7 @@ import sandHillWeb from '/src/assets/images/olderProjects/sandhillProperties/san
                         codeURL='#'
                     />
                 </div>
-                <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+                <!-- <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
                     <ProjectCardNew
                         image={comingSoon}
                         imgAlt='Project Unavailable'
@@ -426,7 +418,7 @@ import sandHillWeb from '/src/assets/images/olderProjects/sandhillProperties/san
                         url='#'
                         codeURL='#' 
                     />
-                </div>
+                </div> -->
             </section>
             <!-- End Website cards for projects MOBILE -->
             <!-- End CMS Projects --> 

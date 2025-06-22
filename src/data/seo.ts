@@ -11,4 +11,8 @@ export const seoData = {
     title: 'Education | Visuals Plus',
     description: 'Learn more about my education and experience! Mark is a Graphic and multimedia graduate, studying in web development and design based in Calgary, Alberta',
   },
+  '/404': { 
+    title: '404: Page Not Found', 
+    description: 'This page does not exist. Navigate to homepage.'
+  },
 };

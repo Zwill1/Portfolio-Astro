@@ -10,7 +10,7 @@ import "../styles/global.css";
 const pathname = Astro.url.pathname;
 // console.log(pathname);
 
-const { title, description } = seoData[pathname] ?? {
+const { title, description } = seoData[pathname] ?? seoData['/404'] ?? {
   // Fallbacks
   title: 'Visuals Plus | Vernon, Kelowna and Calgary Web Design and Development | BC Web Design',
   description: 'Visuals Plus is a Vernon, Kelowna and Calgary Web Design and Development business promoting local businesses with web page design, graphic design, online media',

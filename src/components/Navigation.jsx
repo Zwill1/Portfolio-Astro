@@ -35,9 +35,9 @@ function Navigation() {
                 <li className="p-4">
                     <a href="/education" className="hover:text-[#17A2B8]">Education</a>
                 </li>
-                {/* <li className="p-4">
-                    <a href="/contact" className="hover:text-[#17A2B8]">Contact</a>
-                </li> */}
+                <li className="p-4">
+                    <a href="#contact" className="hover:text-[#17A2B8]">Contact</a>
+                </li>
             </ul>
           </div>
           <div className="lg:hidden" onClick={handleClick}>
@@ -72,11 +72,11 @@ function Navigation() {
                 Education
                 </a>
             </li>
-            {/* <li className="w-full mx-auto text-center">
-                <a href="/contact" className="block pt-4 pb-4" onClick={handleClose}>
+            <li className="w-full mx-auto text-center">
+                <a href="#contact" className="block pt-4 pb-4" onClick={handleClose}>
                 Contact
                 </a>
-            </li> */}
+            </li>
         </ul>
       </nav>
     </>

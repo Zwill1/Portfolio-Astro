@@ -8,6 +8,12 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
+    redirects: {
+        // Example for redirects
+
+        // "/old-page": "/new-page",
+        // "/blog": "https://example.com/blog"
+    },
     // No adapter needed for static sites!
     output: 'static', // optional, since static is the default
     site: 'https://visualsplus.com/',

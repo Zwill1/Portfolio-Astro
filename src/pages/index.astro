@@ -6,9 +6,9 @@ import { Icon } from 'astro-icon/components';
 import Hero from '../components/Hero.astro';
 import Skills from '../components/Skills.astro';
 import Button from '../components/Button';
-import EducationSection from '../components/EducationSection.astro';
+// import EducationSection from '../components/EducationSection.astro';
 import ProjectCardSection from '../components/ProjectCardSection.astro';
-import TimeLine from '../components/TimeLine.astro';
+import TimeLine from '../components/TimeLine.tsx';
 
 ---
 
@@ -17,7 +17,47 @@ import TimeLine from '../components/TimeLine.astro';
 		<Hero />
 
 		<section class="w-10/12 xl:w-10/12 mx-auto mb-20 mt-5">
-			<TimeLine />
+			<section>
+                <h2 class="text-center text-4xl font-bold uppercase">Work Experience</h2>
+            </section>
+			<div class="w-full md:flex md:flex-wrap">
+				<TimeLine 
+					jobTitle='Web Developer / Graphic Designer / IT Support'
+					jobDates='SEPT 2020 - PRESENT'
+					jobTags='HTML5, CSS3, PHP, JS, REACTJS, MYSQL, MSMYSQL.' 
+					list1="Develop & design WordPress websites."
+					list2="On page SEO Optimization."
+					list3="Maintain, troubleshoot and update websites, including databases."
+					list4="Build website features using ReactJS."
+					list5="Email integration/migration"
+					list6="Designing banner ads & logos."
+					list7="Create and update campaign reports."
+				/>
+				<TimeLine 
+					jobTitle='Web Developer/Graphic Designer'
+					jobDates='OCT 2017 - SEPT 2020'
+					jobTags='HTML5, CSS3, JavaScript, PHP, MYSQL.' 
+					list1="Design print materials."
+					list2="Produced information sheets."
+					list3="Designed standing banners, booths, posters, and letterheads."
+					list4="Developed logos and websites."
+					list5="SEO results and analytics."
+					list6="Designed regulated industry labels for distribution"
+					list7="Built brands and traveled worldwide for conventions."
+				/>
+				<TimeLine 
+					jobTitle='Web Designer'
+					jobDates='AUG 2016 - SEPT 2019'
+					jobTags='HTML5, CSS3, JS, AJAX, PHP, MYSQL.' 
+					list1="Updated and maintained the growth of the company website."
+					list2="Uploaded and updated new products/prices."
+					list3="Photographing new products."
+					list4="Developing new websites for upcoming E-liquid brands."
+					list5="Increased traffic and revenue through website optimization"
+					list6="Email newsletter marketing."
+					list7="Search Engine Optimization / Analytical tracking, product research, keyword research."
+				/>
+			</div>
 		</section>
 
 		<ProjectCardSection />

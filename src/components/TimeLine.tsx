@@ -9,7 +9,8 @@ interface TimeLineProps {
 const TimeLine: React.FC<TimeLineProps> = ({jobTitle, jobStart, jobEnd, jobTags, listItems}) => {
   return (
     <>
-        <div className="w-full md:w-5/12 lg:w-3/12 p-4 m-4 bg-[#f7f7f7] rounded-3xl drop-shadow-xl">
+        <div className="w-full md:w-6/12 lg:w-6/12 xl:w-3/12 p-4">
+          <div className="bg-[#f7f7f7] rounded-3xl drop-shadow-xl p-4">
             <h4 className="text-lg font-bold uppercase leading-[1.5] lg:text-left">{jobTitle}</h4>
             <p className="pb-2 text-sm font-bold text-[#17A2B8]"><em>{jobStart} - {jobEnd}</em></p>
             <p className="pb-2 text-sm">
@@ -23,6 +24,7 @@ const TimeLine: React.FC<TimeLineProps> = ({jobTitle, jobStart, jobEnd, jobTags,
                   <li key={index}><i className="ri-arrow-right-double-line"></i> {item}</li>
                 ))}                
             </ul>
+          </div>
         </div>
     </>
   )

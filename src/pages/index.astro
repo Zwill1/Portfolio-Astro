@@ -1,12 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Icon } from 'astro-icon/components';
 
 // Components
 import Hero from '../components/Hero.astro';
 import Skills from '../components/Skills.astro';
 import Button from '../components/Button';
-// import EducationSection from '../components/EducationSection.astro';
 import ProjectCardSection from '../components/ProjectCardSection.astro';
 import TimeLine from '../components/TimeLine.tsx';
 
@@ -16,128 +14,119 @@ import TimeLine from '../components/TimeLine.tsx';
 	<main>
 		<Hero />
 
-		<section class="w-10/12 xl:w-10/12 mx-auto mb-20 mt-5">
-			<section>
-                <h2 class="text-center text-4xl font-bold uppercase">Work Experience</h2>
-            </section>
-			<div class="w-full md:flex md:flex-wrap">
-				<TimeLine 
-					jobTitle='Full Stack Web Developer/Google Ads'
-					jobStart="2019"
-					jobEnd="PRESENT"
-					jobTags={[
-						"HTML5", 
-						"CSS3", 
-						"PHP", 
-						"JavaScript",
-						"MYSQL", 
-						"Google Ads",
-						"Servers",
-						"Hosting",
-						"Shopify Development",
-					]}
-					listItems={[
-						"Designed/Developed and hosted WordPress websites.",
-						"Set up Servers, DNS, Hosted Emails and offered technical support.",
-						"Set up PPC Call ads and search ad campaigns.",
-					]}
-				/>
-				<TimeLine 
-					jobTitle='Web Developer / Graphic Designer / IT Support'
-					jobStart="SEPT 2020"
-					jobEnd="PRESENT"
-					jobTags={[
-						"HTML5", 
-						"CSS3", 
-						"PHP", 
-						"JavaScript", 
-						"ReactJS", 
-						"MYSQL", 
-						"MSMYSQL",
-						"Docker",
-					]}
-					listItems={[
-						"Design & develop SEO optimized WordPress websites.",
-						"On page SEO content Optimization and Call to actions.",
-						"Maintain, troubleshoot and update websites, including databases.",
-						"Built website features using API’s, delivering to a ReactJS frontend.",
-						"Developed marketing campaign reports for internal sales team.",
-						"Led the design team with building online banner ads & logos.",
-					]}
-				/>
-				<TimeLine 
-					jobTitle='Lead Web Developer / Graphic Designer'
-					jobStart="OCT 2017"
-					jobEnd="SEPT 2020"
-					jobTags={[
-						"HTML5", 
-						"CSS3", 
-						"JavaScript", 
-						"PHP", 
-						"MYSQL",
-					]} 
-					listItems={[
-						"Designed print signage for brands.",
-						"Produced informational sheets.",
-						"Designed standing banners, Trade show booths, posters, letterheads and logo.",
-						"Led development of websites for local and international brands.",
-						"Optimized for Local SEO results and setup analytic reports",
-						"Designed Health Canada regulated labels for distribution.",
-						"Grew brand awareness and traveled worldwide for conventions",
-					]}	
-				/>
-				<TimeLine 
-					jobTitle='Lead Web Designer / IT Support'
-					jobStart="AUG 2016"
-					jobEnd="SEPT 2019"
-					jobTags={[
-						"HTML5", 
-						"CSS3", 
-						"JavaScript", 
-						"AJAX", 
-						"PHP", 
-						"MYSQL",
-					]} 
-					listItems={[
-						"Updated and grew the growth of the company website.",
-						"Updated new products/prices.",
-						"Photographing new products.",
-						"Developing new websites for upcoming E-liquid brands.",
-						"Search Engine Optimization",
-						"Email newsletter marketing",
-						"Analytical tracking, product research, keyword research.",
-						"Developed age verification feature.",
-						"Increased traffic and revenue by 25%.",
-						"Website load time reduced by 50%.",
-						"Website maintenance.",
-						"Converted Volusion’s platform to Shopify.",
-					]}
-				/>
-			</div>
+		<section class="bg-[#f4f4f4] pt-10 pb-2">
+			<section class="w-10/12 xl:w-10/12 mx-auto mb-20 mt-5">
+				<section class="mb-5">
+					<h2 class="text-center text-4xl font-bold uppercase">Work Experience</h2>
+				</section>
+				<div class="w-full md:flex md:flex-wrap">
+					<TimeLine 
+						jobTitle='Full Stack Web Developer/Google Ads'
+						jobStart="2019"
+						jobEnd="PRESENT"
+						jobTags={[
+							"HTML5", 
+							"CSS3", 
+							"PHP", 
+							"JavaScript",
+							"MYSQL", 
+							"Google Ads",
+							"Servers",
+							"Hosting",
+							"Shopify Development",
+						]}
+						listItems={[
+							"Designed/Developed and hosted WordPress websites.",
+							"Set up Servers, DNS, Hosted Emails and offered technical support.",
+							"Set up PPC Call ads and search ad campaigns.",
+						]}
+					/>
+					<TimeLine 
+						jobTitle='Web Developer / Graphic Designer / IT Support'
+						jobStart="SEPT 2020"
+						jobEnd="PRESENT"
+						jobTags={[
+							"HTML5", 
+							"CSS3", 
+							"PHP", 
+							"JavaScript", 
+							"ReactJS", 
+							"MYSQL", 
+							"MSMYSQL",
+							"Docker",
+						]}
+						listItems={[
+							"Design & develop SEO optimized WordPress websites.",
+							"On page SEO content Optimization and Call to actions.",
+							"Maintain, troubleshoot and update websites, including databases.",
+							"Built website features using API’s, delivering to a ReactJS frontend.",
+							"Developed marketing campaign reports for internal sales team.",
+							"Led the design team with building online banner ads & logos.",
+						]}
+					/>
+					<TimeLine 
+						jobTitle='Lead Web Developer / Graphic Designer'
+						jobStart="OCT 2017"
+						jobEnd="SEPT 2020"
+						jobTags={[
+							"HTML5", 
+							"CSS3", 
+							"JavaScript", 
+							"PHP", 
+							"MYSQL",
+						]} 
+						listItems={[
+							"Designed print signage for brands.",
+							"Produced informational sheets.",
+							"Designed standing banners, Trade show booths, posters, letterheads and logo.",
+							"Led development of websites for local and international brands.",
+							"Optimized for Local SEO results and setup analytic reports",
+							"Designed Health Canada regulated labels for distribution.",
+							"Grew brand awareness and traveled worldwide for conventions",
+						]}	
+					/>
+					<TimeLine 
+						jobTitle='Lead Web Designer / IT Support'
+						jobStart="AUG 2016"
+						jobEnd="SEPT 2019"
+						jobTags={[
+							"HTML5", 
+							"CSS3", 
+							"JavaScript", 
+							"AJAX", 
+							"PHP", 
+							"MYSQL",
+						]} 
+						listItems={[
+							"Updated and grew the growth of the company website.",
+							"Updated new products/prices.",
+							"Photographing new products.",
+							"Developing new websites for upcoming E-liquid brands.",
+							"Search Engine Optimization",
+							"Email newsletter marketing",
+							"Analytical tracking, product research, keyword research.",
+							"Developed age verification feature.",
+							"Increased traffic and revenue by 25%.",
+							"Website load time reduced by 50%.",
+							"Website maintenance.",
+							"Converted Volusion’s platform to Shopify.",
+						]}
+					/>
+				</div>
+			</section>
 		</section>
 
-		<ProjectCardSection />
+		<section class="mt-20">
+			<ProjectCardSection />
+		</section>
 		<section class="w-10/12 xl:w-10/12 mx-auto mb-20 mt-5 md:flex">
 			<div class="mx-auto">
 				<Button link="/portfolio" name="See more projects" target="_self" bgColor="bg-[#17A2B8] hover:bg-[#28808D] shadow-md hover:shadow-2xl" width="w-full text-center text-1xl text-white pl-6 pr-6" iconStyle='ri-code-s-slash-line' />
 			</div>			
 		</section>
 
-		<section class="bg-[#f4f4f4] pt-5 pb-5 shadow-xl">
+		<section class="bg-[#f4f4f4] pt-5 pb-15 shadow-xl">
 			<Skills />
 		</section>
-
-		<!-- <section class="pt-2 pb-20 bg-[#f4f4f4]">
-			<div class="mt-10">
-				<h2 class="text-center text-4xl font-bold uppercase">Education</h2>
-			</div>
-			<EducationSection />
-			<div class="mt-10">
-				<div class="w-full">
-					<p class="text-center text-1xl italic">For more information on my education, see below</p>
-					<Button link="/education" name="Education" target="_self" bgColor="bg-[#17A2B8] hover:bg-[#28808D] shadow-md hover:shadow-2xl" width="w-[150px] mx-auto mt-5 text-center text-1xl text-white" iconStyle='ri-file-list-3-line' />
-				</div>
-			</div>
-		</section> -->
 	</main>
 </Layout>

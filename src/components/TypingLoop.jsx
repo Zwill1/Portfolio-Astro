@@ -46,7 +46,18 @@ export default function TypingLoop() {
         <div className="inline-block font-mono text-3xl font-semibold leading-[1.5] whitespace-nowrap">
             <span>{displayText}</span><span className="cursor">|</span>
         </div>
-      <style jsx>{`
+        <style>{`
+          .cursor {
+            display: inline-block;
+            animation: blink 1s steps(1) infinite;
+          }
+          @keyframes blink {
+            0%, 50% { opacity: 1; }
+            50.01%, 100% { opacity: 0; }
+          }
+        `}</style>
+
+      {/* <style jsx>{`
         .cursor {
           display: inline-block;
           animation: blink 1s steps(1) infinite;
@@ -59,7 +70,7 @@ export default function TypingLoop() {
             opacity: 0;
           }
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }

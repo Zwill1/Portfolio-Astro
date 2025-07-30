@@ -1,18 +1,23 @@
 ---
 import { Image } from 'astro:assets';
+
+import productUploader from '/src/assets/images/spotlights/product-uploader-thumbnail.jpg';
+import aniStream from '/src/assets/images/spotlights/AniStream-thumbnail.jpg';
+import socialDashboard2 from '/src/assets/images/spotlights/Social-Dashboard-thumbnail.jpg';
+
+
 // Image array can be passed as props or fetched elsewhere
 const images = [
-  "/src/assets/images/spotlights/product-uploader-thumbnail.jpg",
-  "/src/assets/images/spotlights/AniStream-thumbnail.jpg",
-  "/src/assets/images/spotlights/Social-Dashboard-thumbnail.jpg",
+    { src: productUploader, alt: 'Product Uploader' },
+    { src: aniStream, alt: 'AniStream' },
+    { src: socialDashboard2, alt: 'Admin Social Dashboard' },
 ];
 ---
 
 <div class="relative overflow-hidden w-full max-w-4xl mx-auto rounded-2xl shadow-lg">
   <div id="slider" class="flex transition-transform duration-700 ease-in-out" style="transform: translateX(0%)">
-    {images.map((src, i) => (
-        // <Image src={src} class="w-full flex-shrink-0 object-cover" alt={`Slide ${i + 1}`} />
-      <img src={src} class="w-full flex-shrink-0 object-cover" alt={`Slide ${i + 1}`} />
+    {images.map(({src, alt}, i) => (
+      <Image src={src} class="w-full flex-shrink-0 object-cover" loading='eager' alt={`${alt} Slide ${i + 1}`} />
     ))}
   </div>
 

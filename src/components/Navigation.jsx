@@ -29,16 +29,16 @@ function Navigation() {
           <div>
             <ul className="hidden lg:flex pr-4 navigation">
                 <li className="p-4">
-                    <a href="/" className="hover:text-[#17A2B8] font-semibold uppercase">Home</a>
+                    <a href="/" className="hover:text-[#17A2B8] font-semibold uppercase navigation-padding">Home</a>
                 </li>
                 <li className="p-4">
-                    <a href="/portfolio" className="hover:text-[#17A2B8] font-semibold uppercase">Portfolio</a>
+                    <a href="/portfolio" className="hover:text-[#17A2B8] font-semibold uppercase navigation-padding">Portfolio</a>
                 </li>
                 <li className="p-4">
-                    <a href="/education" className="hover:text-[#17A2B8] font-semibold uppercase">Education</a>
+                    <a href="/education" className="hover:text-[#17A2B8] font-semibold uppercase navigation-padding">Education</a>
                 </li>
                 <li className="p-4">
-                    <a href="#contact" className="hover:text-[#17A2B8] font-semibold uppercase">Contact</a>
+                    <a href="#contact" className="hover:text-[#17A2B8] font-semibold uppercase navigation-padding">Contact</a>
                 </li>
             </ul>
           </div>

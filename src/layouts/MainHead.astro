@@ -1,4 +1,5 @@
 ---
+// SEO Data
 import SEOLayout from "../components/SEOLayout.astro";
 import { seoData } from "../data/seo";
 
@@ -6,9 +7,7 @@ import { seoData } from "../data/seo";
 import "../styles/global.css";
 
 // Variables
-
 const pathname = Astro.url.pathname;
-// console.log(pathname);
 
 const { title, description } = seoData[pathname] ?? seoData['/404'] ?? {
   // Fallbacks
@@ -16,10 +15,7 @@ const { title, description } = seoData[pathname] ?? seoData['/404'] ?? {
   description: 'Visuals Plus is a Vernon, Kelowna and Calgary Web Design and Development business promoting local businesses with web page design, graphic design, online media',
 };
 
-// console.log(JSON.stringify(seoData[pathname]));
-
 ---
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />

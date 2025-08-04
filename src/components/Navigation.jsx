@@ -1,4 +1,6 @@
 import { useState } from "react";
+
+// Component imports
 import Hamburger from "./Hamburger.jsx";
 import HamburgerClose from "./HamburgerClose.jsx";
 

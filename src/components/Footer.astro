@@ -6,7 +6,6 @@ import { Image } from "astro:assets";
 import emailIcon from '/src/assets/images/icons/Email.png';
 import githubIcon from '/src/assets/images/icons/GitHub-logo.png';
 import linkedinIcon from '/src/assets/images/icons/Linkedin.png';
-
 ---
 
 <footer class="bg-black pt-10 pb-2" id="contact">
@@ -51,26 +50,23 @@ import linkedinIcon from '/src/assets/images/icons/Linkedin.png';
     if(footerYear !== null){
         footerYear.innerHTML = currentYear;
     }else {
-        console.log("Error in footer year");
+
     }
 
-    // Issue: Gets all links of navigation but mobile nav is not included. Styles do not apply to mobile.
-    // Moving JS scripting to footer as Astro has issues with Document & Window attributes. Needs to be in a script tag (island methods for client components)
-    const navigation = document.querySelector(".navigation");
-    // console.log(navigation);
+    // Grabbing all nav links and apply .active to them so they get the global style
+    const navigationSections = document.querySelectorAll(".navigation");
+    const currentPath = window.location.pathname;
 
-    // Navigation null check -- SOLVED
-    if(navigation !== null){
-        const navLink = navigation.querySelectorAll("a");
-        const currentURL = window.location.href;
+    navigationSections.forEach((nav) => {
+        const navLink = nav.querySelectorAll("a"); 
+
         navLink.forEach((link) => {
-            if(link.href === currentURL){
-            link.classList.add("active");
-            }
-        });
-    } else {
-        // No need for console message
-        // console.error("navigation not found");
-    }
+            const linkPath = new URL(link.href).pathname;
+            if(linkPath  === currentPath){
+                link.classList.add("active");
+            } else{
 
+            }          
+        });
+    })
 </script>

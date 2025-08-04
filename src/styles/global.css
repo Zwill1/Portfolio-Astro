@@ -12,7 +12,11 @@ html.dark {
   .active {
     background-color: #2D5B63;
     color: white;
-    padding: 5px 11px 5px 11px;
+    /* padding: 5px 11px 5px 11px; */
+  }
+
+  .navigation-padding {
+    padding: 5px 11px 5px 11px
   }
 
   html {

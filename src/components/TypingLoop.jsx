@@ -56,21 +56,6 @@ export default function TypingLoop() {
             50.01%, 100% { opacity: 0; }
           }
         `}</style>
-
-      {/* <style jsx>{`
-        .cursor {
-          display: inline-block;
-          animation: blink 1s steps(1) infinite;
-        }
-        @keyframes blink {
-          0%, 50% {
-            opacity: 1;
-          }
-          50.01%, 100% {
-            opacity: 0;
-          }
-        }
-      `}</style> */}
     </div>
   );
 }

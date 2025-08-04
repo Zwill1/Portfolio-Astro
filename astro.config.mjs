@@ -10,9 +10,16 @@ import partytown from "@astrojs/partytown";
 export default defineConfig({
     redirects: {
         // Example for redirects
-
         // "/old-page": "/new-page",
         // "/blog": "https://example.com/blog"
+        "/front-end-websites.php" : "/portfolio",
+        "/index.php" : "/",
+        "/back-end-websites.php" : "/portfolio",
+        "/cms.php" : "/portfolio",
+        "/ecommerce.php" : "/portfolio",
+        "/graphic-design.php" : "/portfolio",
+        "/education.php" : "/education",
+        "/contact.php" : "/",
     },
     // No adapter needed for static sites!
     output: 'static', // optional, since static is the default

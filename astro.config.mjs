@@ -8,6 +8,8 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
+    base: '/',
+    // other configs...
     redirects: {
         // Example for redirects
         // "/old-page": "/new-page",

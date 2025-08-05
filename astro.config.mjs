@@ -24,7 +24,13 @@ export default defineConfig({
     // No adapter needed for static sites!
     output: 'static', // optional, since static is the default
     site: 'https://visualsplus.com/',
-    integrations: [icon(), react(), sitemap(), partytown()],
+    integrations: [icon(), react(), sitemap(), partytown({
+        // Optional: forward calls to `dataLayer.push()` if using Google Tag Manager
+        config: {
+            forward: ['dataLayer.push'],
+            debug: true,
+        },
+    })],
     vite: {    
         plugins: [tailwindcss()],
     },

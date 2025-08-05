@@ -28,7 +28,6 @@ export default defineConfig({
         // Optional: forward calls to `dataLayer.push()` if using Google Tag Manager
         config: {
             forward: ['dataLayer.push'],
-            debug: true,
         },
     })],
     vite: {    

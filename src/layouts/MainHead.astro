@@ -9,7 +9,10 @@ import "../styles/global.css";
 // Variables
 const pathname = Astro.url.pathname;
 
-const { title, description } = seoData[pathname] ?? seoData['/404'] ?? {
+// Strip trailing slash
+const normalizedPath = pathname !== '/' ? pathname.replace(/\/$/, '') : pathname;
+
+const { title, description } = seoData[normalizedPath] ?? seoData['/404'] ?? {
   // Fallbacks
   title: 'Visuals Plus | Vernon, Kelowna and Calgary Web Design and Development | BC Web Design',
   description: 'Visuals Plus is a Vernon, Kelowna and Calgary Web Design and Development business promoting local businesses with web page design, graphic design, online media',
@@ -22,7 +25,15 @@ const { title, description } = seoData[pathname] ?? seoData['/404'] ?? {
     <link rel="icon" type="image/svg+xml" href="/VP-Favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" /> 
+    <!-- Google tag (gtag.js) -->
+    <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-1JHK9JFLJ5"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1JHK9JFLJ5');
+    </script>
     <SEOLayout 
       title={title}
       description={description}

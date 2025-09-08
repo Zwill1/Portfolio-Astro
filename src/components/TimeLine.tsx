@@ -21,7 +21,7 @@ const TimeLine: React.FC<TimeLineProps> = ({jobTitle, jobStart, jobEnd, jobTags,
             <p className="mb-2 font-semibold">Job Duties:</p>
             <ul>
                 {listItems?.map((item, index) => (
-                  <li key={index}><i className="ri-arrow-right-double-line"></i> {item}</li>
+                  <li key={index}><svg xmlns="http://www.w3.org/2000/svg" style={{display: "inline-block"}} width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M8.59 16.58L13.17 12L8.59 7.41L10 6l6 6l-6 6z"/></svg> {item}</li>                  
                 ))}                
             </ul>
           </div>

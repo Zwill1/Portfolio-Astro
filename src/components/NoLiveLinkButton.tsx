@@ -1,16 +1,18 @@
+import { Icon } from '@iconify/react';
+
 interface NoLiveButtonProps {
     name: string;
     bgColor: string;
     width: string;
-    iconStyle?: string;
+    iconName?: string;
 }
 
-const NoLiveButton: React.FC<NoLiveButtonProps> = ({ name, bgColor, width, iconStyle }) => {
+const NoLiveButton: React.FC<NoLiveButtonProps> = ({ name, bgColor, width, iconName }) => {
   return (
     <p
       className={`${bgColor} ${width} block p-1`}
     >
-      <i className={iconStyle}></i> {name}
+      <span>{iconName ? <Icon icon={iconName} width="22" style={{display: 'inline-block'}} /> : null} {name}</span>
     </p>
   );
 };

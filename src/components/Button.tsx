@@ -1,13 +1,16 @@
+import { Icon } from '@iconify/react';
+
 interface ButtonProps {
     link?: string;
     name: string;
     bgColor: string;
     width: string;
     target?: '_blank' | '_self' | '_parent' | '_top'; // target is optional,
-    iconStyle?: string;
+    iconName?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ link, name, bgColor, width, target, iconStyle }) => {
+const Button: React.FC<ButtonProps> = ({ link, name, bgColor, width, target, iconName }) => {
+
   return (
     <a
       href={link}
@@ -15,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({ link, name, bgColor, width, target, ico
       className={`${bgColor} ${width} block p-1`}
       rel={target === '_blank' ? 'noopener noreferrer' : undefined}
     >
-      <i className={iconStyle}></i> {name}
+      <span>{iconName ? <Icon icon={iconName} width="22" style={{display: 'inline-block'}} /> : null} {name}</span>
     </a>
   );
 };
